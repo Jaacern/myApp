@@ -8,12 +8,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 // Importa el componente Navbar
-import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent  // Declara el componente Navbar
+ // Declara el componente Navbar
   ],
   imports: [
     BrowserModule,
@@ -23,7 +22,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   exports: [
-    NavbarComponent  // Exporta el componente Navbar para usarlo en otras páginas
   ]
 })
 export class AppModule {}
