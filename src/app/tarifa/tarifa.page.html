@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tarifa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h1>Tarifa</h1>
+    <p>Tu viaje está preparándose</p>
+
+    <ion-item>
+      <ion-label>Partida</ion-label>
+      <ion-input value="25-09-2024" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Destino</ion-label>
+      <ion-input value="Lugar" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Distancia total:</ion-label>
+      <p>25km</p>
+    </ion-item>
+
+    <div class="tarifa-container">
+      <p>Tarifa asignada por persona</p>
+      <h2>$20.000</h2>
+    </div>
+
+    <!-- Botón Publicar Viaje con NavController -->
+    <ion-button expand="block" (click)="publicarViaje()">Publicar Viaje</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h1>TE LLEVO!</h1>
+
+    <!-- Avatar e información del perfil -->
+    <div class="profile-info">
+      <ion-avatar>
+        <img src="assets/icon/avatar-placeholder.png" alt="Avatar">
+      </ion-avatar>
+      <h2>JAVIER CERNA</h2>
+      <ion-label>Nivel: Veterano</ion-label>
+      <ion-label>Viajes Realizados: 25</ion-label>
+      <ion-label>Km recorridos: 84,329kms</ion-label>
+    </div>
+
+    <!-- Opciones de perfil -->
+    <ion-item lines="none">
+      <ion-label>EDITAR INFORMACIÓN</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>MI VEHÍCULO</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <!-- Opciones de cuenta -->
+    <ion-item lines="none" color="danger">
+      <ion-label>Cerrar sesión</ion-label>
+    </ion-item>
+    <ion-item lines="none" color="danger">
+      <ion-label>Eliminar mi cuenta</ion-label>
+    </ion-item>
+  </div>
+</ion-content>
+
+<!-- Barra de Navegación -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="inicio">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="buscar">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-label>Buscar</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="misviajes">
+      <ion-icon name="briefcase-outline"></ion-icon>
+      <ion-label>Mis Viajes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="mensajes">
+      <ion-icon name="chatbubbles-outline"></ion-icon>
+      <ion-label>Mensajes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="perfil" selected>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

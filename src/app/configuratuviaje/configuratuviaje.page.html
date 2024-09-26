@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configura tu Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h1>Configura tu viaje</h1>
+
+    <!-- Asientos -->
+    <ion-item>
+      <ion-label>Asientos</ion-label>
+      <ion-button slot="end">-</ion-button>
+      <ion-input type="number" value="1" min="1"></ion-input>
+      <ion-button slot="end">+</ion-button>
+    </ion-item>
+
+    <!-- Fecha y Hora -->
+    <ion-item>
+      <ion-label>Fecha del viaje</ion-label>
+      <ion-input value="25-09-2024"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hora del viaje</ion-label>
+      <ion-input value="11:15 PM"></ion-input>
+    </ion-item>
+
+    <!-- Comentarios adicionales -->
+    <ion-item>
+      <ion-label>Comentarios adicionales</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <!-- Botón Siguiente -->
+    <ion-button expand="block" (click)="onTarifa()">Siguiente</ion-button>  <!-- Llama a la función goToTarifa() -->
+  </div>
+</ion-content>

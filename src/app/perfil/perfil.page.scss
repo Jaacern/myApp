@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #00B1FF;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  ion-avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  ion-label {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  ion-item {
+    --background: none;
+    color: #00B1FF;
+    margin-bottom: 10px;
+  }
+  
+  ion-item[color="danger"] {
+    color: #ff3b30;
+  }
+  

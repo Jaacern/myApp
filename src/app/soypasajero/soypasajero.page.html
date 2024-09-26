@@ -1,0 +1,36 @@
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <!-- Mapa -->
+    <ion-img src="assets/icon/mapa-ruta.svg"></ion-img>
+
+    <!-- Inputs de viaje -->
+    <ion-item>
+      <ion-label position="floating">Dónde te subes?</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">A dónde vas?</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">pasajeros</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!-- Fecha y Hora -->
+    <ion-item>
+      <ion-label>Fecha del Viaje</ion-label>
+      <ion-input value="08-09-2024"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hora del Viaje</ion-label>
+      <ion-input value="17:02 PM"></ion-input>
+    </ion-item>
+  </div> <!-- Cierra correctamente el contenedor -->
+
+  <!-- Botón Buscar Viaje independiente -->
+  <ion-button expand="block" (click)="buscarViaje()">Buscar Viaje</ion-button>
+

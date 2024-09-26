@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+  <div class="container">
+    <img src="assets/icon/auto.svg" alt="Car" class="logo"/>
+
+    <h1>Te Llevo!</h1>
+    <p>COMPARTE EL VIAJE, DISFRUTA EL DESTINO</p>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>Recuérdame</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+
+    <ion-button expand="block" (click)="onLogin()">Login</ion-button>  <!-- Evento click -->
+
+    <ion-text>
+      <p>Aún no tienes cuenta? <a href="/crearcuenta">Crea tu cuenta aquí</a></p>
+    </ion-text>
+  </div>
+</ion-content>

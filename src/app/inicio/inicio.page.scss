@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #00B1FF;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+ion-button {
+  margin-top: 20px;
+  background-color: #00B1FF;
+  color: white;
+}
+
+ion-text a {
+  color: #00B1FF;
+  text-decoration: none;
+}

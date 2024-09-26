@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crea Tu Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h1>CREA TU CUENTA!</h1>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+      <ion-icon name="eye-off" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Repite Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+      <ion-icon name="eye-off" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>
+        Estoy de acuerdo con las bases de privacidad 
+        <a (click)="leerTerminos()">Leer Términos y Políticas</a>
+      </ion-label>
+    </ion-item>
+
+    <!-- Añade el evento (click) en el botón -->
+    <ion-button expand="block" (click)="crearCuenta()">Crear Cuenta</ion-button>
+  </div>
+</ion-content>
